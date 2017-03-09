@@ -27,7 +27,7 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String price = e1.getText().toString();
-                String count = e1.getText().toString();
+                String count = e2.getText().toString();
                 int result = Integer.parseInt(price)*Integer.parseInt(count);
 
                 Toast.makeText(getApplicationContext(),"사과의 가격은 " + result, Toast.LENGTH_SHORT).show();
