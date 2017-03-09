@@ -2,48 +2,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="examples.com.myapplication2.MainActivity">
+    tools:context="examples.com.myapplication2.Main3Activity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="나의 첫번째 App"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="사과가격 계산" />
-
-    <Button
-        android:id="@+id/button2"
+        android:text="태어난 년도를 입력하세요."/>
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="나이계산기" />
-
+        android:hint="숫자를 입력하세요."
+        android:id="@+id/age_edit"/>
     <Button
-        android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="온도변환" />
-
-    <Button
-        android:id="@+id/button4"
+        android:text="나이계산"
+        android:id="@+id/age_btn"/>
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="레스토랑 주문" />
-
-    <Button
-        android:id="@+id/button5"
+        android:text="나이를 입력하세요."/>
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="계산기" />
-
+        android:hint="숫자를 입력하세요."
+        android:id="@+id/age_edit2"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/age_btn2"
+        android:text="태어난 해 계산"/>
 </LinearLayout>
