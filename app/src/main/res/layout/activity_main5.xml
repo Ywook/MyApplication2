@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="30dp"
+    android:layout_margin="20dp"
     tools:context="examples.com.myapplication2.Main5Activity">
 
 

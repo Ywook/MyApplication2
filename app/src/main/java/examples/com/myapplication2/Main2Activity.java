@@ -14,8 +14,8 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        setTitle("사과가격 계산기");
         init();
-
     }
 
     void init(){
@@ -30,7 +30,7 @@ public class Main2Activity extends AppCompatActivity {
                 String count = e2.getText().toString();
                 int result = Integer.parseInt(price)*Integer.parseInt(count);
 
-                Toast.makeText(getApplicationContext(),"사과의 가격은 " + result, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"사과의 가격은 " + result + "원 입니다.", Toast.LENGTH_SHORT).show();
             }
         });
     }
