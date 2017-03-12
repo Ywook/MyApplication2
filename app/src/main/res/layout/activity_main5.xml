@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,17 +11,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:weightSum="7"
         android:orientation="horizontal">
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="5"
             android:text="피자(15000원)" />
 
         <EditText
             android:id="@+id/h3_edit"
-            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="개수 입력"/>
 
@@ -31,64 +33,76 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:weightSum="7"
         android:orientation="horizontal">
 
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="스파게티(13000원)" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="스파게티(13000원)" />
 
         <EditText
-            android:layout_marginLeft="30dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/h3_edit2"
-            android:hint="개수 입력" />
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="개수 입력"/>
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:weightSum="7"
         android:orientation="horizontal">
 
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="5"
             android:text="샐러드(9000원)" />
 
         <EditText
-            android:layout_marginLeft="30dp"
-            android:layout_width="wrap_content"
             android:id="@+id/h3_edit3"
+            android:layout_weight="2"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="개수 입력" />
+            android:hint="개수 입력"/>
+
     </LinearLayout>
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="match_parent"
+        android:textStyle="bold"
         android:layout_height="wrap_content"
         android:text="멤버쉽 카드 있음(10%할인)" />
 
     <Button
         android:id="@+id/h3_btn"
         android:layout_width="match_parent"
+        android:textStyle="bold"
         android:layout_height="wrap_content"
         android:text="금액 계산하기" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
+        android:weightSum="7"
         android:layout_height="wrap_content">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="5"
             android:text="주문개수"/>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:gravity="right"
             android:id="@+id/h3_text"
             android:text="0개" />
     </LinearLayout>
@@ -96,18 +110,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
+        android:weightSum="7"
         android:layout_height="wrap_content">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="5"
             android:text="주문개수"/>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:id="@+id/h3_text2"
-
+            android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:gravity="right"
             android:text="0개" />
     </LinearLayout>
 

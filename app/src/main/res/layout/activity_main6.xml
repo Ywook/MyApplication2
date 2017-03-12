@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
@@ -10,14 +9,17 @@
 
     <LinearLayout
         android:orientation="horizontal"
+        android:weightSum="10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.35"
             android:layout_height="wrap_content"
             android:text="숫자 1 "/>
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="8.65"
             android:layout_height="wrap_content"
             android:hint="정수 입력"
             android:id="@+id/h4_edit"/>
@@ -25,14 +27,17 @@
 
     <LinearLayout
         android:orientation="horizontal"
+        android:weightSum="10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.35"
             android:layout_height="wrap_content"
             android:text="숫자 2 "/>
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="8.65"
             android:layout_height="wrap_content"
             android:hint="정수 입력"
             android:id="@+id/h4_edit2"/>

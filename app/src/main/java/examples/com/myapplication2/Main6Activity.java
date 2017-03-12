@@ -34,9 +34,8 @@ public class Main6Activity extends AppCompatActivity {
                 String s1 = e1.getText().toString();
                 String s2 = e2.getText().toString();
 
-                if(s1 == null || s2 == null || s1.equals("") || s2.equals("")){
-                    Toast.makeText(getApplicationContext(),"값을 입력하세요.",Toast.LENGTH_SHORT).show();
-                }else{
+                if(emptyCheck(s1, s2));
+                else{
                     int result = Integer.parseInt(s1)+Integer.parseInt(s2);
                     Toast.makeText(getApplicationContext(), "더하기 계산 결과는 "+result+"입니다",Toast.LENGTH_SHORT).show();
                 }
@@ -49,9 +48,8 @@ public class Main6Activity extends AppCompatActivity {
                 String s1 = e1.getText().toString();
                 String s2 = e2.getText().toString();
 
-                if(s1 == null || s2 == null || s1.equals("") || s2.equals("")){
-                    Toast.makeText(getApplicationContext(),"값을 입력하세요.",Toast.LENGTH_SHORT).show();
-                }else{
+                if(emptyCheck(s1, s2));
+                else{
                     int result = Integer.parseInt(s1)-Integer.parseInt(s2);
                     Toast.makeText(getApplicationContext(), "더하기 빼기 결과는 "+result+"입니다",Toast.LENGTH_SHORT).show();
                 }
@@ -65,9 +63,8 @@ public class Main6Activity extends AppCompatActivity {
                 String s1 = e1.getText().toString();
                 String s2 = e2.getText().toString();
 
-                if(s1 == null || s2 == null || s1.equals("") || s2.equals("")){
-                    Toast.makeText(getApplicationContext(),"값을 입력하세요.",Toast.LENGTH_SHORT).show();
-                }else{
+                if(emptyCheck(s1,s2));
+                else{
                     int result = Integer.parseInt(s1)*Integer.parseInt(s2);
                     Toast.makeText(getApplicationContext(), "곱하기 계산 결과는 "+result+"입니다",Toast.LENGTH_SHORT).show();
                 }
@@ -81,9 +78,8 @@ public class Main6Activity extends AppCompatActivity {
                 String s1 = e1.getText().toString();
                 String s2 = e2.getText().toString();
 
-                if(s1 == null || s2 == null || s1.equals("") || s2.equals("")){
-                    Toast.makeText(getApplicationContext(),"값을 입력하세요.",Toast.LENGTH_SHORT).show();
-                }else{
+                if(emptyCheck(s1,s2));
+                else{
                     double result = (double)Integer.parseInt(s1)/Integer.parseInt(s2);
                     Toast.makeText(getApplicationContext(), "나누기 계산 결과는 "+result+"입니다",Toast.LENGTH_SHORT).show();
                 }
@@ -92,5 +88,20 @@ public class Main6Activity extends AppCompatActivity {
         });
 
     }
+    boolean isEmpty(String s){
+        return s == null || s.equals("");
+    }
 
+    boolean emptyCheck(String s1, String s2){
+        if(isEmpty(s1)){
+            Toast.makeText(getApplicationContext(),"값을 입력하세요.",Toast.LENGTH_SHORT).show();
+            e1.requestFocus();
+            return true;
+        }else if(isEmpty(s2)){
+            Toast.makeText(getApplicationContext(),"값을 입력하세요.",Toast.LENGTH_SHORT).show();
+            e2.requestFocus();
+            return true;
+        }
+        return false;
+    }
 }
