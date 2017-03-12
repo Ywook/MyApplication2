@@ -14,7 +14,8 @@ public class Main5Activity extends AppCompatActivity {
     Button btn;
     CheckBox checkBox;
     TextView text1,text2;
-
+    int PIZZA = 15000, SPAGHETTI = 13000, SALAD = 9000;
+    double DISCOUNT = 0.9;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,11 +48,11 @@ public class Main5Activity extends AppCompatActivity {
                 int t3 = Integer.parseInt(e3.getText().toString());
 
                 int result1 = t1 + t2 + t3;
-                int result2 = t1 * 15000 + t2 * 13000 + t3 * 9000;
+                int result2 = t1 * PIZZA + t2 * SPAGHETTI + t3 * SALAD;
 
 
                 if (checkBox.isChecked()) {
-                    result2 = (int) (result2 * 0.9);
+                    result2 = (int) (result2 * DISCOUNT);
                 }
 
                 text1.setText(result1+"개");
@@ -60,14 +61,3 @@ public class Main5Activity extends AppCompatActivity {
         });
     }
 }
-/*
-
-        String t1 = e1.getText().toString();
-        String t2 = e2.getText().toString();
-        String t3 = e3.getText().toString();
-
-        int result1 = Integer.parseInt(t1) + Integer.parseInt(t2) + Integer.parseInt(t3);
-        int result2 = Integer.parseInt(t1) * 15000 + Integer.parseInt(t2) * 13000 + Integer.parseInt(t3) * 9000;
-
-
- */
